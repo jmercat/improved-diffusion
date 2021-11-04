@@ -59,12 +59,18 @@ def main():
 
 def create_argparser():
     defaults = dict(
-        data_dir="",
+        data_dir="cifar_train",
         schedule_sampler="uniform",
         lr=1e-4,
         weight_decay=0.0,
         lr_anneal_steps=0,
-        batch_size=1,
+        batch_size=8,
+        image_size=32,
+        num_res_blocks=3,
+        diffusion_steps=1000,
+        noise_schedule='cosine',
+        class_cond=False,
+        learn_sigma=True,
         microbatch=-1,  # -1 disables microbatches
         ema_rate="0.9999",  # comma-separated list of EMA values
         log_interval=10,
