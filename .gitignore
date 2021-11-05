@@ -1,4 +1,6 @@
 .DS_Store
 __pycache__/
-SVHN*
-cifar*
+SVHN_train*
+SVHN_test*
+cifar_train*
+cifar_test*
